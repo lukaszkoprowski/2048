@@ -1,0 +1,98 @@
+/* 
+Colors
+background: #FAF8EF;
+grid: #BBADA0;
+empty field: #CDC1B4;
+field - 2: #EEE4DA;
+field - 4: #EDE0C8;
+field - 8: #F2B179;
+field - 16: #F59563;
+field - 32: #F67C5F;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAF8EF;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    max-width: 400px;
+    height: 100vw;
+    max-height: 400px;
+    padding: .6%;
+    background-color: #BBADA0;
+    border-radius: .5rem;
+}
+
+.field {
+    width: 23%;
+    height: 23%;
+    background-color: #CDC1B4;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans',
+        sans-serif;
+    font-size: 3.5rem;
+    color: #776E65;
+}
+
+.controlPanel {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    /* background-color: ; */
+}
+
+.wrapper {
+    flex-basis: 50%;
+    display: flex;
+}
+
+.left,
+.right {
+    flex-basis: 50%;
+}
+
+.up,
+.down {
+    flex-basis: 25%;
+}
+
+.button {
+    opacity: 0.01;
+    border: none;
+    outline: none;
+
+}
+
+
+.button:active {
+    opacity: 1;
+    background-color: rgba(79, 248, 138, 0.1)
+}
